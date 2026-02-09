@@ -2,8 +2,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
+    base: '/my-portfolio/',
     plugins: [
         react(),
-        tailwindcss(), // ← REQUIRED for Tailwind v4
+        tailwindcss(), // required for Tailwind v4
     ],
 });
