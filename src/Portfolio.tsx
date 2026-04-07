@@ -196,25 +196,25 @@ export default function Portfolio() {
     {
       icon: Trophy,
       title: "5 Technical Internships",
-      description: "Completed data science internships",
+      description: "Data Science & ML expertise across industry leaders",
       color: "from-yellow-500 to-orange-500"
     },
     {
       icon: Star,
       title: "15+ Projects",
-      description: "Production-ready ML solutions",
+      description: "End-to-end ML and analytics solutions delivered",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Zap,
       title: "92% Accuracy",
-      description: "Industry-leading ML models",
+      description: "Cutting-edge predictive model performance",
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: Award,
       title: "4 Certifications",
-      description: "Python, SQL, Data Visualization",
+      description: "Professional credentials in data science stack",
       color: "from-green-500 to-emerald-500"
     }
   ];
@@ -361,8 +361,8 @@ export default function Portfolio() {
 
               <div id="about" className="lg:col-span-2">
                 <div className="mb-8">
-                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Aspiring Data Scientist Building Real-World Impact</h2>
-                  <p className="text-xl text-gray-300 mb-6">B.Tech in Artificial Intelligence | Python • Machine Learning • AI Agents</p>
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Data Science Professional | AI & Automation Engineer</h2>
+                  <p className="text-xl text-gray-300 mb-6">B.Tech in Artificial Intelligence | Data Analytics • Data Science • Generative AI • Agents & Automation</p>
                   <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mb-8"></div>
                 </div>
 
@@ -372,10 +372,10 @@ export default function Portfolio() {
                     Professional Summary
                   </h3>
                   <p className="text-gray-200 leading-relaxed mb-4">
-                    Data Science professional with proven expertise in building end-to-end machine learning pipelines, AI automation systems, and enterprise analytics solutions. Currently pursuing B.Tech in Artificial Intelligence at Parul Institute of Engineering and Technology with strong foundation in Python, SQL, and advanced ML algorithms.
+                    Experienced data professional specializing in data analytics, data science, generative AI, and intelligent automation systems. Actively learning and applying advanced techniques in machine learning, deep learning, prompt engineering, and AI agent development. Currently pursuing B.Tech in Artificial Intelligence at Parul Institute of Engineering and Technology with strong proficiency in Python, SQL, and cutting-edge ML frameworks.
                   </p>
                   <p className="text-gray-200 leading-relaxed">
-                    Demonstrated success across 5 technical internships delivering measurable business impact through predictive modeling, data-driven insights, and intelligent automation.
+                    Demonstrated excellence across 5 technical internships delivering quantifiable business impact through predictive modeling, data-driven insights, AI-powered automation, and actionable analytics solutions.
                   </p>
                 </div>
 
@@ -386,15 +386,15 @@ export default function Portfolio() {
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     {[
-                      { icon: Code2, text: "Machine Learning & Deep Learning" },
-                      { icon: Database, text: "Data Analysis & Visualization" },
-                      { icon: BrainCircuit, text: "AI Agents & Automation" },
-                      { icon: TrendingUp, text: "Predictive Analytics" },
-                      { icon: FileText, text: "Statistical Analysis" },
-                      { icon: Users, text: "Cross-Functional Collaboration" }
+                      { icon: Code2, text: "Machine Learning & Deep Learning", color: "text-blue-400" },
+                      { icon: Database, text: "Data Analysis & Visualization", color: "text-cyan-400" },
+                      { icon: BrainCircuit, text: "AI Agents & Automation", color: "text-purple-400" },
+                      { icon: TrendingUp, text: "Predictive Analytics", color: "text-green-400" },
+                      { icon: FileText, text: "Statistical Analysis", color: "text-indigo-400" },
+                      { icon: Users, text: "Cross-Functional Collaboration", color: "text-pink-400" }
                     ].map((item, idx) => (
-                      <div key={idx} className="flex items-center p-4 bg-slate-900/60 backdrop-blur-sm rounded-lg border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300">
-                        <item.icon className="text-blue-400 mr-3" size={20} />
+                      <div key={idx} className="flex items-center p-4 bg-slate-900/60 backdrop-blur-sm rounded-lg border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
+                        <item.icon className={`${item.color} mr-3 flex-shrink-0`} size={20} />
                         <span className="text-sm font-medium text-gray-200">{item.text}</span>
                       </div>
                     ))}
@@ -402,12 +402,22 @@ export default function Portfolio() {
                 </div>
 
                 <div className="bg-linear-to-br from-slate-800/90 via-blue-900/40 to-slate-800/90 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/30 shadow-2xl">
-                  <h3 className="text-2xl font-bold text-white mb-6">Education</h3>
-                  <div className="border-l-4 border-blue-500 pl-6">
-                    <h4 className="text-xl font-bold text-white">Bachelor of Technology - Artificial Intelligence</h4>
-                    <p className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text font-medium mt-1">Parul Institute of Engineering and Technology</p>
-                    <p className="text-gray-400 mt-1">July 2023 - May 2027 (Expected)</p>
-                    <p className="text-gray-200 mt-3">Focusing on Machine Learning, Deep Learning, DSA, and AI Systems Development</p>
+                  <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+                    <Award className="mr-3 text-blue-400" size={24} />
+                    Education
+                  </h3>
+                  <div className="border-l-4 border-blue-500 pl-6 space-y-4">
+                    <div>
+                      <h4 className="text-lg font-bold text-white">Bachelor of Technology</h4>
+                      <p className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text font-semibold mt-1">Artificial Intelligence</p>
+                    </div>
+                    <div>
+                      <p className="text-blue-300 font-medium">Parul Institute of Engineering and Technology</p>
+                      <p className="text-gray-400 text-sm mt-1">July 2023 - May 2027 (Expected)</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-300 leading-relaxed text-sm">Specialization in Machine Learning, Deep Learning, DSA, and AI Systems Development</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -579,31 +589,18 @@ export default function Portfolio() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              {/* <a href="mailto:utaharish96@gmail.com" className="p-6 bg-linear-to-br from-slate-800/90 via-blue-900/40 to-slate-800/90 backdrop-blur-sm rounded-xl border-2 border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl text-center group">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=utaharish96@gmail.com" target="_blank" rel="noopener noreferrer" className="p-6 bg-linear-to-br from-slate-800/90 via-blue-900/40 to-slate-800/90 backdrop-blur-sm rounded-xl border-2 border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl text-center group">
                 <Mail size={32} className="mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-white mb-2">Email</h3>
                 <p className="text-sm text-gray-300 break-all">utaharish96@gmail.com</p>
-              </a> */
-              
-              <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=utaharish96@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="p-6 bg-linear-to-br from-slate-800/90 via-blue-900/40 to-slate-800/90 backdrop-blur-sm rounded-xl border-2 border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl text-center group"
->
-  <Mail size={32} className="mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform" />
-  <h3 className="font-semibold text-white mb-2">Email</h3>
-  <p className="text-sm text-gray-300 break-all">utaharish96@gmail.com</p>
-</a>
-}
-              <a href="https://www.linkedin.com/in/uta-harish-kumar-83b685300/
-" target="_blank" rel="noopener noreferrer" className="p-6 bg-linear-to-br from-slate-800/90 via-purple-900/40 to-slate-800/90 backdrop-blur-sm rounded-xl border-2 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-2xl text-center group">
+              </a>
+
+              <a href="https://www.linkedin.com/in/uta-harish-kumar-83b685300/" target="_blank" rel="noopener noreferrer" className="p-6 bg-linear-to-br from-slate-800/90 via-purple-900/40 to-slate-800/90 backdrop-blur-sm rounded-xl border-2 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-2xl text-center group">
                 <Linkedin size={32} className="mx-auto mb-3 text-purple-400 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-white mb-2">LinkedIn</h3>
                 <p className="text-sm text-gray-300">Connect with me</p>
               </a>
 
-              
               <a href="https://github.com/Harish-Uta17" target="_blank" rel="noopener noreferrer" className="p-6 bg-linear-to-br from-slate-800/90 via-pink-900/40 to-slate-800/90 backdrop-blur-sm rounded-xl border-2 border-pink-500/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-2xl text-center group">
                 <Github size={32} className="mx-auto mb-3 text-pink-400 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-white mb-2">GitHub</h3>
@@ -615,7 +612,7 @@ export default function Portfolio() {
 
         <footer className="bg-slate-900/95 backdrop-blur-md text-white py-12 px-6 border-t border-blue-500/20">
           <div className="max-w-7xl mx-auto text-center">
-            <p className="text-gray-400">© 2026 Uta Harish Kumar. Designed for impact and built with precision.</p>
+            <p className="text-gray-400">© 2026 Uta Harish Kumar. Data-driven solutions. AI-powered innovation. Built with precision.</p>
           </div>
         </footer>
       </div>
