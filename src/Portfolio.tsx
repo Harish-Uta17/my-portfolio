@@ -130,39 +130,87 @@ export default function Portfolio() {
   const projects = [
     {
       title: "House Price Prediction System",
-      description: "Enterprise-grade ML system predicting real estate prices with 92% accuracy using advanced regression techniques including Random Forest, XGBoost, and ensemble methods.",
-      impact: "Achieved 92% prediction accuracy with RMSE reduction of 15% compared to baseline models",
-      technologies: ["Python", "Scikit-learn", "XGBoost", "Pandas"],
-      category: "Machine Learning",
+      description: "Enterprise-grade regression system that predicts real estate prices with strong model performance through feature engineering, ensemble learning, and systematic evaluation.",
+      impact: "Delivered 92% prediction accuracy with a 15% RMSE reduction over baseline models.",
+      category: "Predictive Modeling",
       metrics: ["92% Accuracy", "15% RMSE Reduction"],
+      features: [
+        "Compared multiple regression models to select the best-performing approach.",
+        "Applied feature engineering and preprocessing to improve prediction quality.",
+        "Used ensemble methods and evaluation metrics to validate business-ready results."
+      ],
+      technologies: ["Python", "Scikit-learn", "XGBoost", "Pandas"],
       github: "https://github.com/Harish-Uta17/House-price-prediction"
     },
     {
       title: "Smart Sales Analytics Platform",
-      description: "Full-stack enterprise analytics application built with PostgreSQL and Streamlit featuring real-time KPI dashboards and customer segmentation using K-Means clustering.",
-      impact: "Enabled real-time business decision-making with automated KPI tracking and customer insights",
-      technologies: ["Python", "PostgreSQL", "Streamlit", "SQL"],
+      description: "Full-stack analytics application that turns sales data into real-time KPI dashboards and actionable customer insights using SQL and Streamlit.",
+      impact: "Enabled faster business decisions with automated KPI tracking and customer segmentation.",
       category: "Data Analytics",
       metrics: ["Real-time Dashboards", "5+ KPIs"],
+      features: [
+        "Built interactive dashboards for sales monitoring and business reporting.",
+        "Applied K-Means clustering to surface customer segments and buying patterns.",
+        "Connected PostgreSQL-backed data with a responsive Streamlit front end."
+      ],
+      technologies: ["Python", "PostgreSQL", "Streamlit", "SQL"],
       github: "https://github.com/Harish-Uta17/Smart-Sales-Analytics"
     },
     {
       title: "AI Social Media Automation Agent",
-      description: "Intelligent automation system leveraging Google Gemini AI for content generation and auto-posting to LinkedIn with n8n workflow orchestration.",
-      impact: "Automated content workflow reducing manual posting time by 80% with AI-generated insights",
-      technologies: ["AI Agents", "Google Gemini AI", "n8n"],
+      description: "Intelligent automation system that uses Gemini AI and n8n to generate and publish professional LinkedIn content with minimal manual effort.",
+      impact: "Reduced manual posting time by 80% through an AI-assisted workflow.",
       category: "AI Automation",
-      metrics: ["80% Time Saved", "Automated"],
+      metrics: ["80% Time Saved", "Automated Workflow"],
+      features: [
+        "Generated social content with AI prompts and contextual input.",
+        "Orchestrated end-to-end publishing through an automated workflow.",
+        "Improved consistency and speed for professional content delivery."
+      ],
+      technologies: ["AI Agents", "Google Gemini AI", "n8n"],
       github: "https://github.com/Harish-Uta17/AI-Social-Automation-Agent"
     },
     {
       title: "AI News Summarization Agent",
-      description: "Automated news aggregation and summarization system using RSS feeds and Google Gemini AI delivering professional daily newsletters via Gmail.",
-      impact: "Automated daily news delivery with AI-summarized content for efficient information consumption",
-      technologies: ["NLP", "Google Gemini AI", "RSS Feeds"],
+      description: "Automated news aggregation and summarization system that compiles relevant updates and delivers concise AI-generated newsletters.",
+      impact: "Automated daily content delivery for faster and more efficient information consumption.",
       category: "AI & NLP",
       metrics: ["Daily Automation", "AI Summarization"],
+      features: [
+        "Collected news from RSS feeds and condensed it using generative AI.",
+        "Delivered polished summaries through Gmail for daily consumption.",
+        "Reduced reading time while preserving the key takeaways."
+      ],
+      technologies: ["NLP", "Google Gemini AI", "RSS Feeds"],
       github: "https://github.com/Harish-Uta17/AI-News-Summarization-Agent"
+    },
+    {
+      title: "ElectroHub Sales Analytics",
+      description: "Power BI dashboard that transforms retail sales data into stakeholder-ready insights across product, promotion, and city-level performance.",
+      impact: "Modeled 3,510 transactions into an interactive BI solution for faster sales and promotion analysis.",
+      category: "Power BI",
+      metrics: ["3,510 Transactions", "8 Product Lines"],
+      features: [
+        "Built a clean star schema with one fact table and three dimension tables.",
+        "Created DAX-driven KPIs, top/bottom product analysis, and period comparison views.",
+        "Designed drill-through dashboards with slicers, maps, and conditional formatting."
+      ],
+      technologies: ["Power BI", "DAX", "Power Query", "Excel", "Data Modeling"],
+      github: "https://github.com/Harish-Uta17/ElectroHub-PowerBI"
+    },
+    {
+      title: "Student Score Predictor",
+      description: "Machine learning regression app that predicts a student's mathematics score from profile and preparation data through a polished Streamlit experience.",
+      impact: "Packaged a recruiter-friendly ML workflow with reusable preprocessing, model comparison, and saved inference artifacts.",
+      category: "Machine Learning",
+      metrics: ["Streamlit UI", "Regression Pipeline"],
+      features: [
+        "Automated preprocessing for numeric and categorical student inputs.",
+        "Compared multiple regressors with cross-validation and hyperparameter tuning.",
+        "Exposed the trained model through a modern Streamlit dashboard and Flask app."
+      ],
+      technologies: ["Python", "Machine Learning", "Scikit-learn", "Streamlit", "Pandas", "NumPy"],
+      github: "https://github.com/Harish-Uta17/Student-Exam-Performance-Predictor"
     }
   ];
 
@@ -174,20 +222,28 @@ export default function Portfolio() {
     ],
     "Data Science & ML": [
       { name: "Machine Learning", level: 85 },
+      { name: "Scikit-learn", level: 88 },
       { name: "Deep Learning", level: 70 },
       { name: "Statistical Analysis", level: 80 },
       { name: "Data Analysis", level: 90 }
     ],
     "Tools & Frameworks": [
-      { name: "Scikit-learn", level: 85 },
       { name: "Pandas & NumPy", level: 90 },
+      { name: "Streamlit", level: 85 },
       { name: "TensorFlow/Keras", level: 70 },
-      { name: "PostgreSQL", level: 80 }
+      { name: "PostgreSQL", level: 80 },
+      { name: "Flask", level: 78 }
+    ],
+    "Analytics & BI": [
+      { name: "Power BI", level: 88 },
+      { name: "Data Visualization", level: 92 },
+      { name: "Dashboard Design", level: 86 },
+      { name: "Power Query", level: 84 }
     ],
     "Specializations": [
       { name: "AI Agents & Automation", level: 85 },
       { name: "Prompt Engineering", level: 88 },
-      { name: "Data Visualization", level: 85 },
+      { name: "Business Intelligence", level: 87 },
       { name: "Feature Engineering", level: 82 }
     ]
   };
@@ -478,26 +534,41 @@ export default function Portfolio() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold bg-linear-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent mb-4">Featured Projects</h2>
-              <p className="text-xl text-gray-300">Real-world applications demonstrating technical expertise</p>
+              <p className="text-xl text-gray-300">Real-world applications across machine learning, business intelligence, and automation</p>
               <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 rounded-full mx-auto mt-4"></div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
               {projects.map((project, index) => (
-                <div key={index} className="bg-linear-to-br from-slate-800/90 via-purple-900/30 to-slate-800/90 backdrop-blur-sm p-8 rounded-2xl border-2 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20 group">
-                  <div className="flex items-start justify-between mb-4">
+                <div key={index} className="group relative overflow-hidden bg-linear-to-br from-slate-800/90 via-purple-900/30 to-slate-800/90 backdrop-blur-sm p-8 rounded-2xl border-2 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                  <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500"></div>
+
+                  <div className="flex items-start justify-between gap-4 mb-4">
                     <span className="px-3 py-1 bg-linear-to-r from-purple-600/30 to-pink-600/30 text-purple-300 rounded-full text-xs font-semibold uppercase tracking-wide border border-purple-500/30">{project.category}</span>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
-                      <ExternalLink size={20} />
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-300 hover:text-purple-300 transition-colors text-sm font-medium">
+                      <ExternalLink size={18} />
+                      GitHub Repo
                     </a>
                   </div>
 
                   <h3 className="text-2xl font-bold text-white mb-3 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">{project.title}</h3>
-                  <p className="text-gray-200 mb-4 leading-relaxed">{project.description}</p>
+                  <p className="text-gray-200 mb-5 leading-relaxed">{project.description}</p>
 
-                  <div className="mb-4 p-4 bg-linear-to-br from-green-900/40 to-emerald-900/40 backdrop-blur-sm border border-green-500/30 rounded-lg">
-                    <p className="text-sm font-semibold text-green-300 mb-1">Business Impact:</p>
+                  <div className="mb-5 p-4 bg-linear-to-br from-green-900/40 to-emerald-900/40 backdrop-blur-sm border border-green-500/30 rounded-lg">
+                    <p className="text-sm font-semibold text-green-300 mb-1">Business Impact</p>
                     <p className="text-sm text-green-200">{project.impact}</p>
+                  </div>
+
+                  <div className="mb-5">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">Key Highlights</p>
+                    <ul className="space-y-3">
+                      {project.features.map((feature, i) => (
+                        <li key={i} className="flex items-start text-sm text-gray-200">
+                          <CheckCircle size={16} className="text-cyan-400 mr-3 mt-0.5 flex-shrink-0" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   <div className="mb-4">
@@ -532,11 +603,11 @@ export default function Portfolio() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold bg-linear-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent mb-4">Technical Skills</h2>
-              <p className="text-xl text-gray-300">Comprehensive toolkit for data science excellence</p>
+              <p className="text-xl text-gray-300">Python, machine learning, Power BI, and dashboarding for end-to-end data work</p>
               <div className="h-1 w-20 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-full mx-auto mt-4"></div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
               {Object.entries(skills).map(([category, items], index) => (
                 <div key={index} className="bg-linear-to-br from-slate-800/90 via-blue-900/30 to-slate-800/90 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/30 hover:shadow-2xl transition-all duration-300">
                   <h3 className="text-xl font-bold bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">{category}</h3>
