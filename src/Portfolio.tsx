@@ -153,6 +153,7 @@ export default function Portfolio() {
         "Applied K-Means clustering to surface customer segments and buying patterns.",
         "Connected PostgreSQL-backed data with a responsive Streamlit front end."
       ],
+      
       technologies: ["Python", "PostgreSQL", "Streamlit", "SQL"],
       github: "https://github.com/Harish-Uta17/Smart-Sales-Analytics"
     },
